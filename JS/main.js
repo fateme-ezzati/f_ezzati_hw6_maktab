@@ -51,12 +51,10 @@ function carsRace() {
     let flag = []
     while (flag.length < carsNumber) {
         for (let i = 0; i < carsNumber; i++) {
-            if (cars[i].position < 301) {
-                let new_pos = cars[i].position + Math.floor(Math.random() * 10) + 1
-
+            let new_pos = cars[i].position + Math.floor(Math.random() * 10) + 1
+            if (new_pos < 301 && cars[i].position !== -1) {
                 let index = cars.findIndex(function (item) {
-                    console.log("index", new_pos, Number(item.position))
-
+                    // console.log("index", new_pos, Number(item.position))
                     return Number(item.position) === new_pos
                 })
 
@@ -66,19 +64,24 @@ function carsRace() {
                 cars[i].position = new_pos
 
             } else {
-                if (cars.findIndex(item => item.name === cars[i].name) !== -1) {
+                cars[i].position = -1
+                if (flag.findIndex(item => item === cars[i].name) === -1) {
                     flag.push(cars[i].name)
+
                 }
                 // cars.splice(i, 1)
                 // console.log('end',flag,cars)
             }
         }
-        console.log('end', flag, flag.length, carsNumber)
+        // console.log('end', flag, flag.length, carsNumber)
         showMap(cars)
         console.log('---------------------------------------------------------------------------------')
     }
 
 
-    // if(flag.length === carsNumber){}
-    // return console.log(`END OF GAME! ${flag[0]}`)
+    
+    return console.log(`END OF GAME! ${flag[0]} is winner!`)
 }
+
+
+// halge cars tekrari
