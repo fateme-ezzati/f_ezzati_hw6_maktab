@@ -14,106 +14,78 @@ body,html {
 li{
     list-style: none;
 }
-.content{
-    width: 100%;
-    padding: 0 3%;
+input{
+    border: none;
+    outline: none;
 }
-.c_header,
-.content>footer {
+main{
     width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(219, 219, 219);
-    margin-bottom: 25px;
-}
-.c_header>ul,
-.c_header>ul>li {
+    height: 100vh;
+    background-image: url(../img/wallpapersden.com_earth-sun-planet_1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    color: rgb(112, 116, 115);
 }
-.c_header>ul>li {
-    width: 60px;
-    height: 38px;
-    border-radius: 5px;
-    color: rgb(41, 127, 184);
-    cursor: pointer;
-    margin-top: 11px;
-}
-
-.c_header>ul>li:first-of-type {
-    background-color: rgb(41, 127, 184);
+.loginForm{
+    width: 450px;
+    height: 335px;
+    background: rgba(0, 0, 0, 0.6);
     color: white;
-}
-
-.wrapper {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.part1 {
-    width: 100%;
-    padding:  50px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(238, 238, 238);
-    border-radius: 5px;
-    margin-bottom: 40px;
+    padding: 45px;
 }
-.part1>h2 {
-    font-size: 70px;
-    text-align: center;
+.loginForm>*{
+    margin-bottom: 15px;
 }
-
-.part1>p {
-    line-height: 1.5;
-    margin: 20px 0;
-    text-align: center;
+.loginForm>h2{
+    font-size: 26px;
 }
-
-.part1>button {
-    width: 156px;
-    height: 50px;
-    background-color: rgb(90, 185, 91);
-    color: white;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-}
-.part2 {
+label,.submit{
     width: 100%;
+    /* height: 38px; */
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #fff;
+    direction: rtl;
     display: flex;
-    flex-wrap: wrap;
 }
-
-.p2_card {
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.p2_card>p {
-    line-height: 1.4;
-}
-
-.p2_card>h2 {
-    margin-bottom: 10px;
-}
-
-.content>footer {
-    margin-bottom: 0;
-    border-bottom: none;
-    border-top: 1px solid rgb(219, 219, 219);
+label>span{
+    width: 40px;
+    height: 100%;
     display: flex;
+    background: rgba(108,117,125,.8);
+}
+label>input{
+    height: 38px;
+    flex-grow: 1;
+    color: rgba(108,117,125,.8);
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.submit{
+    height: 40px;
+    background: rgb(40,167,69);
+    border: none;
+    justify-content: center;
     align-items: center;
-    color: rgb(112, 116, 115);
-    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+P{
+    margin-top: 5px;
+    font-size: 20px;
+}
+p>a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #0089ff;
 }
