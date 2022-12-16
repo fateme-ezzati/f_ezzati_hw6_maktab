@@ -110,23 +110,6 @@ footer{
 
 
 /* responsive */
-
-@media screen and (max-width: 800px) {
-
-    .mainPart>.leftSide{
-        width: 15%;
-    }
-    .article{
-        padding: 20px;
-    }
-    main>header>ul{
-        display: flex;
-    }
-    main>header>button{
-        display: none;
-    }
-
-}
 @media screen and (max-width: 600px) {
     main{
         padding: 5px;
@@ -167,4 +150,24 @@ footer{
         display: flex;
     }
 }
+@media screen  and (min-width: 601px) and (max-width: 800px) {
+
+    .mainPart>.leftSide{
+        width: 15%;
+    }
+    .rightSide{
+        width: 100%;
+    }
+    .article{
+        padding: 20px;
+    }
+    main>header>ul{
+        display: flex;
+    }
+    main>header>button{
+        display: none;
+    }
+
+}
+
 
